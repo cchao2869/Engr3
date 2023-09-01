@@ -16,13 +16,13 @@ angle = 1
 
 while True:
     if touch_A1.value:
-            if angle < 180:
+            if angle < 174:
                 angle = angle + 5
                 my_servo.angle = angle 
                 time.sleep(0.05)
                 print(angle)
     if touch_A2.value:
-            if angle > 0:
+            if angle > 6:
                 angle = angle - 5
                 my_servo.angle = angle 
                 time.sleep(0.05)
