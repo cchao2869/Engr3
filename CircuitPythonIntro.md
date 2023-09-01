@@ -1,7 +1,7 @@
-# CircuitPython
+# Circuit Python Intro
 This repository will actually serve as an aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.  If you want to draw inspiration from other classmates, feel free to check [this directory of all students!](https://github.com/chssigma/Class_Accounts).
 ## Table of Contents
-* [Servo Cap Touch](#Servo Cap Touch)
+* [Servo Cap Touch](#ServoCapTouch)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
@@ -11,10 +11,38 @@ This repository will actually serve as an aid to help you get started with your 
 Use two touch points (wires) to control a 180 degree servo. 
 
 ```python
+# Carolina Chao
+# Servo Cap Touch
+ 
+import time
+import board
+import touchio
+import pwmio
+from adafruit_motor import servo
 
+touch_A1 = touchio.TouchIn(board.A1)  
+touch_A2 = touchio.TouchIn(board.A2) 
+pwm = pwmio.PWMOut(board.A4, duty_cycle=2 ** 15, frequency=50)
+my_servo = servo.Servo(pwm)
+angle = 1
+
+
+while True:
+    if touch_A1.value:
+            if angle < 174:
+                angle = angle + 5
+                my_servo.angle = angle 
+                time.sleep(0.05)
+                print(angle)
+    if touch_A2.value:
+            if angle > 6:
+                angle = angle - 5
+                my_servo.angle = angle 
+                time.sleep(0.05)
+                print(angle)
+    time.sleep(0.05)
 
 ```
-
 
 ### Evidence
 
@@ -24,8 +52,7 @@ Image credit goes to [Rick A](https://www.youtube.com/watch?v=dQw4w9WgXcQ&scrlyb
 
 
 ### Wiring
-Make an account with your Google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+
 
 ### Reflection
 This assignment was really cool, and I'm finally starting to get a hang on Circuit Python. For the past few assignments, the following resources from AdaFruit have been especially helpful to translate from Arduino to Circuit Python:
