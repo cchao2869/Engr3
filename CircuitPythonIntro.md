@@ -45,7 +45,6 @@ while True:
 
 ### Evidence
 ![ezgif com-crop](https://github.com/cchao2869/Engr3/assets/91699474/fdee3c52-c49d-4e8b-aea5-b7cd9ed3f63d)
-Image credit goes to Carolina Chao.
 
 ### Wiring
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/2b579acd-75f0-417e-8ee0-15b4e92ea6d9)
