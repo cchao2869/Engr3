@@ -76,3 +76,5 @@ Code goes here
 
 [Ultrasonic](https://docs.circuitpython.org/projects/hcsr04/en/latest/api.html)
 [NeoPixel](https://learn.adafruit.com/adafruit-metro-m0-express/circuitpython-internal-rgb-led)
+[Map_Function](https://www.youtube.com/watch?v=KVLgzVDNV4I)
+[elseif](https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/buttons-and-switch)

@@ -1,5 +1,5 @@
 # Carolina Chao
-# Servo Cap Touch
+# Servo Cap Touch - 8/29/2023
  
 import time
 import board
