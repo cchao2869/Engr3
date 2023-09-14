@@ -49,23 +49,67 @@ while True:
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/2b579acd-75f0-417e-8ee0-15b4e92ea6d9)
 
 ### Reflection
-This assignment was really cool, and I'm finally starting to get a hang on Circuit Python. For the past few assignments, the following resources from AdaFruit have been especially helpful to translate from Arduino to Circuit Python:
-
-[Translate](https://learn.adafruit.com/arduino-to-circuitpython?view=all#analog-pwm-output)
-
-[Essentials](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo)
+This assignment was really cool, and I'm finally starting to get a hang on Circuit Python. For the past few assignments, the following resources from AdaFruit have been especially helpful to translate from Arduino to Circuit Python (shown below).
 
 Through AdaFruit, I found reference code for controlling a 180 degree servo in Circuit Python, as well as a description and code for capacitive touch. It was relatively easy to combine these, so my biggest issue came with the inequalities to control the angle of the servo. Initially, I had the bounds at 180 and 0 degrees. However, I kept running into issues whenever the servo got close to these bounds becausee the loop would stop running since the "angle is out of range". As a solution, I changed the bounds to 174 and 6 degrees since I had the angle variance as +/- 5. This was successful, and the loop runs continuously. I'm very excited to continue to understand Circuit Python, and use capacitive touch in a more complex project in the future.   
 
+### Resources
+[Translate Arduino to Circuit Python](https://learn.adafruit.com/arduino-to-circuitpython?view=all#analog-pwm-output)
+[Circuit Python Essentials](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo)
 
 
 ## NeoPixel Distance Sensor
 
 ### Description & Code
+Use ultrasonic sensor to measure distance to an object, and fade color of neopixel based on distance. 
+
 
 ```python
-Code goes here
+# Carolina Chao
+# Distance Sensor - 9/11/2023
 
+
+import math
+import time
+import board
+import adafruit_hcsr04
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)     # create distance sensor object connected to pins D5 and D6
+
+import neopixel
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)                        # create 1 led object on metro board
+led.brightness = (0.3)                                            # set led brightness to 30%
+valR = 0
+valG = 0
+valB = 0
+cm = 0
+from adafruit_simplemath import map_range
+full = 65535
+
+
+while True:
+    try:
+        cm = math.ceil(sonar.distance)                            # round sonar.distance to integer and call as "cm"
+        print(cm)
+        if cm < 18:                                               # if.. 
+            valR = int(map_range(cm, 0, 17, full, 0))
+            valB = int(map_range(cm, 0, 17, 0, full))
+            valG = 0
+            led.fill((valR, valG, valB))
+        elif cm < 35:                                             # otherwise, if..
+            valB = int(map_range(cm, 17, 35, full, 0))
+            valG = int(map_range(cm, 17, 35, 0, full))
+            valR = 0
+            led.fill((valR, valG, valB))
+        else:                                                     # otherwise, do..
+            valG = full
+            valB = 0
+            valR = 0
+            led.fill((valR, valG, valB))
+
+    except RuntimeError:                                          # continue running code if issue with ultrasonic sensor distance
+        print("Retrying!")
+        pass
+    time.sleep(0.1)
 ```
 
 ### Evidence
@@ -73,8 +117,10 @@ Code goes here
 ### Wiring
 
 ### Reflection
+The most difficult part of this assignment was getting the neopixel to work and map smoothly. To get the neopixel to fade smoother, I used a math function to turn the float sonar.distance from the ultrasonic sensor library to an integer. Example code for the ultrasonic sensor was relatively easy to find and get working, but neopixel was much more difficult. Another issue throughout this assignment was that the Metro Express kept crashing after I tried to upload code. To fix this, I replaced my adafruit library with an older version. 
 
-[Ultrasonic](https://docs.circuitpython.org/projects/hcsr04/en/latest/api.html)
+### Resources
+[Ultrasonic Sensor](https://docs.circuitpython.org/projects/hcsr04/en/latest/api.html)
 [NeoPixel](https://learn.adafruit.com/adafruit-metro-m0-express/circuitpython-internal-rgb-led)
 [Map_Function](https://www.youtube.com/watch?v=KVLgzVDNV4I)
 [elseif](https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/buttons-and-switch)
