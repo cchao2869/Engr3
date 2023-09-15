@@ -12,6 +12,7 @@ Use two touch points (wires) to control a 180 degree servo.
 ```python
 # Carolina Chao
 # Servo Cap Touch
+
  
 import time
 import board
@@ -113,14 +114,19 @@ while True:
 ```
 
 ### Evidence
+![ezgif-4-fba71c1030](https://github.com/cchao2869/Engr3/assets/91699474/e8303cc0-1790-4d27-a6ad-4e70ad1d4969)
 
 ### Wiring
+![image](https://github.com/cchao2869/Engr3/assets/91699474/8d5f7ec7-05d2-4e76-98bf-f0d55e6c79ad)
 
 ### Reflection
 The most difficult part of this assignment was getting the neopixel to work and map smoothly. To get the neopixel to fade smoother, I used a math function to turn the float sonar.distance from the ultrasonic sensor library to an integer. Example code for the ultrasonic sensor was relatively easy to find and get working, but neopixel was much more difficult. Another issue throughout this assignment was that the Metro Express kept crashing after I tried to upload code. To fix this, I replaced my adafruit library with an older version. 
 
 ### Resources
 [Ultrasonic Sensor](https://docs.circuitpython.org/projects/hcsr04/en/latest/api.html)
+
 [NeoPixel](https://learn.adafruit.com/adafruit-metro-m0-express/circuitpython-internal-rgb-led)
+
 [Map_Function](https://www.youtube.com/watch?v=KVLgzVDNV4I)
+
 [elseif](https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/buttons-and-switch)
