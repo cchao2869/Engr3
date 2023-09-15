@@ -59,7 +59,6 @@ Through AdaFruit, I found reference code for controlling a 180 degree servo in C
 
 [Circuit Python Essentials](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo)
 
-test
 
 ## NeoPixel Distance Sensor
 
