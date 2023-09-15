@@ -1,7 +1,7 @@
 # Circuit Python Intro
 ## Table of Contents
 * [Servo Cap Touch](#ServoCapTouch)
-* [NextAssignmentGoesHere](#NextAssignment)
+* [Neopixel Distance Sensor](#NeopixelDistanceSensor)
 ---
 
 ## Servo Cap Touch
@@ -56,8 +56,10 @@ Through AdaFruit, I found reference code for controlling a 180 degree servo in C
 
 ### Resources
 [Translate Arduino to Circuit Python](https://learn.adafruit.com/arduino-to-circuitpython?view=all#analog-pwm-output)
+
 [Circuit Python Essentials](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo)
 
+test
 
 ## NeoPixel Distance Sensor
 
