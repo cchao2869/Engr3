@@ -2,6 +2,7 @@
 ## Table of Contents
 * [Servo Cap Touch](#ServoCapTouch)
 * [Neopixel Distance Sensor](#NeopixelDistanceSensor)
+* [Motor Control](#MotorControl)
 ---
 
 ## Servo Cap Touch
@@ -131,3 +132,23 @@ The most difficult part of this assignment was getting the neopixel to work and 
 [Map_Function](https://www.youtube.com/watch?v=KVLgzVDNV4I)
 
 [elseif](https://learn.adafruit.com/sensor-plotting-with-mu-and-circuitpython/buttons-and-switch)
+
+
+## Motor Control
+
+### Description & Code
+
+```python
+
+```
+
+### Evidence
+
+
+### Wiring
+
+
+### Reflection
+
+### Resources
+
