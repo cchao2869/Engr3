@@ -171,4 +171,5 @@ while True:
 The code for this assignment was very simple. Initially, I thought a map function was necessary to control the motor speed based on the potentiometer value. However, duty cycle is more efficient, and once I understood what duty cycle is, the assignment was easy. Duty cycle is a non-negative number that represents the percent of time that a part of the PWM signal is fully on vs. fully off. Duty cycle can be thought of as a percentage, where at 0% the signal is always turned off and never turns on, at 50% the signal is on for exactly as much time as it’s off, and at 100% it’s always turned on. Therefore, the duty cycle of the motor can be set equal to the potentiometer value (between 0 and 65535), and the motor speed will map accordingly. As a reminder, digital inputs and outputs can only be ON or OFF, whereas analog inputs and outputs have variance.
 
 ### Resources
+[Potentiometer](https://learn.adafruit.com/make-it-change-potentiometers/circuitpython)
 [Duty Cycle and PWM](https://learn.adafruit.com/circuitpython-basics-analog-inputs-and-outputs/pulse-width-modulation-outputs)
