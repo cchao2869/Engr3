@@ -173,3 +173,55 @@ The code for this assignment was very simple. Initially, I thought a map functio
 ### Resources
 [Potentiometer](https://learn.adafruit.com/make-it-change-potentiometers/circuitpython)
 [Duty Cycle and PWM](https://learn.adafruit.com/circuitpython-basics-analog-inputs-and-outputs/pulse-width-modulation-outputs)
+
+
+## Photointerrupter
+
+### Description & Code
+Use a photointerrupter to count how many times it has been interrupted in a four second interval. 
+
+```python
+# Carolina Chao
+# Photointerrupter - 9/21/2023
+
+import time
+import board
+import digitalio
+
+photo = digitalio.DigitalInOut(board.D3)    # photointerrupter connected to digital pin 3
+photo.direction = digitalio.Direction.INPUT      # set photointerrupter as a digital input
+photo.pull = digitalio.Pull.UP         # set direction of pin pull using internal resistor on Metro board
+
+state = 0 
+counter = 0     # number of interrupts
+now = time.monotonic()
+
+while True:
+
+    if photo.value == False:    # if not currently interrupted
+        state = 0       # reset interrupt state to not previously interrupted
+
+    if state == 0:      # if previously uninterrupted
+        if photo.value == True:     # if currently interrupted...
+            counter = counter + 1   # add to counter
+            state = 1       # set state to previously interrupted
+
+
+    if (now + 4) < time.monotonic():  # if 4 seconds elapses
+        print("Interupts:", counter)
+        now = time.monotonic()       # reset time
+        counter = 0     # reset counter
+```
+
+### Evidence
+
+### Wiring
+ 
+
+### Reflection
+I enjoyed this assignment, as it helped me solidify how to set up a digital pin with Circuit Python, and I learned how to debounce a photointerrupter with nested ```if``` statements. Additionally, I learned a new way to count using ```time.monotonic``` instead of just a delay using ```time.sleep```. It was fairly easy to get the photointerrupter running and counting the number of interrupts, but it took me a few tries to correctly use ```if``` statements to debounce the photointerrupter. I solved this issue by making another varible for the previous interrupt state (```state```), instead of just the ```photo.value```, which shows the current state of the photointerrupter. 
+
+### Resources
+[```time.monotonic```](https://learn.adafruit.com/arduino-to-circuitpython/time)
+
+[```digitalio```](https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/#digitalio.DigitalInOut)

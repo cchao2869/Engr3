@@ -9,12 +9,20 @@ photo = digitalio.DigitalInOut(board.D3)    # photointerrupter connected to digi
 photo.direction = digitalio.Direction.INPUT      # set photointerrupter as a digital input
 photo.pull = digitalio.Pull.UP         # set direction of pin pull using internal resistor on Metro board
 
-counter = 0
+state = 0 
+counter = 0     # number of interrupts
 now = time.monotonic()
 
 while True:
-    if photo.value == True:     # if interrupted...
-        counter = counter + 1   # add to counter
+
+    if photo.value == False:    # if not currently interrupted
+        state = 0       # reset interrupt state to not previously interrupted
+
+    if state == 0:      # if previously uninterrupted
+        if photo.value == True:     # if currently interrupted...
+            counter = counter + 1   # add to counter
+            state = 1       # set state to previously interrupted
+
 
     if (now + 4) < time.monotonic():  # if 4 seconds elapses
         print("Interupts:", counter)
