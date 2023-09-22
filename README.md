@@ -3,6 +3,7 @@
 * [Servo Cap Touch](#ServoCapTouch)
 * [Neopixel Distance Sensor](#NeopixelDistanceSensor)
 * [Motor Control](#MotorControl)
+* [Photointerrupter](#Photointerrupter)
 ---
 
 ## Servo Cap Touch
