@@ -215,9 +215,11 @@ while True:
 ```
 
 ### Evidence
+![ezgif-5-adce547abb](https://github.com/cchao2869/Engr3/assets/91699474/0f13d342-fe36-485b-a5c4-d14c11716858)
+![image](https://github.com/cchao2869/Engr3/assets/91699474/c1dc48e2-4f14-4e54-ac63-a1c9a52ed157)
 
 ### Wiring
- 
+![Final photointerrupter fritzing diagram image1](https://github.com/cchao2869/Engr3/assets/91699474/b3c997a9-5f50-4c79-a158-d7bdc45d98c8)
 
 ### Reflection
 I enjoyed this assignment, as it helped me solidify how to set up a digital pin with Circuit Python, and I learned how to debounce a photointerrupter with nested ```if``` statements. Additionally, I learned a new way to count using ```time.monotonic``` instead of just a delay using ```time.sleep```. It was fairly easy to get the photointerrupter running and counting the number of interrupts, but it took me a few tries to correctly use ```if``` statements to debounce the photointerrupter. I solved this issue by making another varible for the previous interrupt state (```state```), instead of just the ```photo.value```, which shows the current state of the photointerrupter. 
