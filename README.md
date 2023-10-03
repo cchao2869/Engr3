@@ -279,3 +279,37 @@ while True:
 The hardest part of this assignment was understanding what time intervals to count and how to use ```time.monotonic()```. ```time.monotonic``` counts the time in seconds from when the board gets power. 
 
 
+# Onshape
+## Table of Contents
+* [Swing Arm](#SwingArm)
+---
+
+## Swing Arm
+
+### Description
+
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+
+### Evidence
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/6e267858-93bc-468d-b62a-6cb0fedadde0) 
+Isometric view step 1.
+![image](https://github.com/cchao2869/Engr3/assets/91699474/18d5c5e2-0949-44d1-a186-970be5f85ab4) 
+Isometric view step 2. 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/62866caf-85ab-49ff-bac1-b07f703fa9e1)
+Side view step 1.
+![image](https://github.com/cchao2869/Engr3/assets/91699474/6f4065fb-f8d4-425e-99d4-dcaf9ce3328f)
+Front view step 1. 
+
+### Part Link 
+
+[Swing Arm](https://cvilleschools.onshape.com/documents/3a08f93e624b27da27233aaa/w/58e2e113dcc8ff706ccf9cab/e/004696c950245ba8d0a95735?renderMode=0&uiState=651c2dd3ee66814d9a8f4d13)
+
+### Reflection
+
+This was good practice at using drawings to create a part on Onshape, as well as variables which are used in the Certification Exam I will take in the spring. Although there is not a "right" way to create a part, there are certainly ways to make a part that are less efficient, and lead to errors later on when dimensions need to be changed (such as with varibles). For instance, Mr. Dierof advised me to never use fillets as opposed to sketch fillets. I also thought it was interesting that Mr. Miller said he creates parts by beginning with a solid block and removing necessary pieces (mirroring the way a machine would manufacter the part). As a reminder, TYP means typical (referring to measurements). If a measurement has TYP next to it, it means similar entities have the same measurement. I ran into a few issues when reading the drawings. It is important to differentiate between the symbol for radius as opposed to diameter. For example, a circle of diameter 10 could be dimensioned as R5 or ⌀10. Additionally, the distance between the center of a circle and the edge is not the diameter, but half the length of the width (shown below). Finally, I learned how to read sectioned drawings. The dashed line shows exactly where the section is with the arrow pointing towards the direction of the face, and all shaded areas are solid. 
+
+
+
+
+
