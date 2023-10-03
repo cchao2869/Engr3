@@ -314,7 +314,7 @@ Front view step 1.
 
 This was good practice at using drawings to create a part on Onshape, as well as variables which are used in the Certification Exam I will take in the spring. Although there is not a "right" way to create a part, there are certainly ways to make a part that are less efficient, and lead to errors later on when dimensions need to be changed (such as with varibles). For instance, Mr. Dierof advised me to never use fillets as opposed to sketch fillets. I also thought it was interesting that Mr. Miller said he creates parts by beginning with a solid block and removing necessary pieces (mirroring the way a machine would manufacter the part). As a reminder, TYP means typical (referring to measurements). If a measurement has TYP next to it, it means similar entities have the same measurement. I ran into a few issues when reading the drawings. It is important to differentiate between the symbol for radius as opposed to diameter. For example, a circle of diameter 10 could be dimensioned as R5 or ⌀10. Additionally, the distance between the center of a circle and the edge is not the diameter, but half the length of the width (shown below). Finally, I learned how to read sectioned drawings. The dashed line shows exactly where the section is with the arrow pointing towards the direction of the face, and all shaded areas are solid. 
 
-
-
+![image](https://github.com/cchao2869/Engr3/assets/91699474/83d90853-3bf1-436c-8499-f2b4aad4c5a3)
+Dimensioning circle on edge. 
 
 
