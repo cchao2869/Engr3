@@ -1,3 +1,9 @@
+## [Circuit Python Intro](#CircuitPythonIntro)
+## [Onshape Certification](#OnshapeCertification)
+---
+
+
+
 # Circuit Python Intro
 ## Table of Contents
 * [Servo Cap Touch](#ServoCapTouch)
@@ -224,6 +230,9 @@ while True:
 ### Reflection
 I enjoyed this assignment, as it helped me solidify how to set up a digital pin with Circuit Python, and I learned how to debounce a photointerrupter with nested ```if``` statements. Additionally, I learned a new way to count using ```time.monotonic``` instead of just a delay using ```time.sleep```. It was fairly easy to get the photointerrupter running and counting the number of interrupts, but it took me a few tries to correctly use ```if``` statements to debounce the photointerrupter. I solved this issue by making another varible for the previous interrupt state (```state```), instead of just the ```photo.value```, which shows the current state of the photointerrupter. 
 
+### Evidence 
+![ezgif-5-adce547abb](https://github.com/cchao2869/Engr3/assets/91699474/0f13d342-fe36-485b-a5c4-d14c11716858)
+
 ### Resources
 [```time.monotonic```](https://learn.adafruit.com/arduino-to-circuitpython/time)
 
@@ -252,7 +261,6 @@ state = 0    # last interrupt state
 counter = 0     # number of interrupts
 last = 0
 t = 0
-mark = 0
 
 
 while True:
@@ -270,16 +278,13 @@ while True:
             
 ```
 
-### Evidence
-
 ### Wiring
 ![Final photointerrupter fritzing diagram image1](https://github.com/cchao2869/Engr3/assets/91699474/b3c997a9-5f50-4c79-a158-d7bdc45d98c8)
 
 ### Reflection
 The hardest part of this assignment was understanding what time intervals to count and how to use ```time.monotonic()```. ```time.monotonic``` counts the time in seconds from when the board gets power. 
 
-
-# Onshape
+# Onshape Certification
 ## Table of Contents
 * [Swing Arm](#SwingArm)
 ---
@@ -288,7 +293,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 
 ### Description
 
-Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+Use drawings to design a swing arm with variables that can be adjusted. 
 
 ### Evidence
 
