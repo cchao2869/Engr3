@@ -286,8 +286,31 @@ The hardest part of this assignment was understanding what time intervals to cou
 
 # Onshape Certification
 ## Table of Contents
+* [Block Hanger](#BlockHanger)
 * [Swing Arm](#SwingArm)
 ---
+
+## Block Hanger
+
+### Description
+
+Use a drawing to design a simple block hanger. 
+
+### Evidence
+![image](https://github.com/cchao2869/Engr3/assets/91699474/70692a77-fc97-471a-9d3a-a68c3d25ffa8) 
+Isometric view. 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/476b37d1-28ec-4cf8-8b7e-c1e3605c1045)
+Front view. 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/45afb6ec-0884-49e8-b91c-1f1c70b54e11)
+Top view. 
+
+
+### Part Link 
+
+[Block Hanger](https://cvilleschools.onshape.com/documents/dc5e3e08fa60365adaf235d4/w/b8a016bdc84f26997116b1ff/e/fbf688942fb4a090461fd879?renderMode=0&uiState=651c3c5634ee5a40dcda60f2)
+
+### Reflection
+This assignment was a good transition to Onshape, but fairly easy as it only took one main sketch, and then a few extrudes to remove holes. In order to design this part efficiently, I used the Symmetric tool. In addition, when using the Extrude tool to remove from the part, it is important to set the End Type to Through All (unless another is desired). This will prevent unwanted removal of areas in large, complicated Part Studios. Remember to completly constrain a sketch (no blue, all black) before extruding!
 
 ## Swing Arm
 
