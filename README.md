@@ -316,13 +316,13 @@ Use drawings to design a swing arm with variables that can be adjusted.
 ### Evidence
 
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/6e267858-93bc-468d-b62a-6cb0fedadde0) 
-Isometric view step 1.
+Isometric view configuration 1.
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/18d5c5e2-0949-44d1-a186-970be5f85ab4) 
-Isometric view step 2. 
+Isometric view configuration 2. 
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/62866caf-85ab-49ff-bac1-b07f703fa9e1)
-Side view step 1.
+Side view configuration 1.
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/6f4065fb-f8d4-425e-99d4-dcaf9ce3328f)
-Front view step 1. 
+Front view configuration 1. 
 
 ### Part Link 
 
