@@ -1,15 +1,10 @@
-## [Circuit Python Intro](#CircuitPythonIntro)
-## [Onshape Certification](#OnshapeCertification)
----
-
-
-
 # Circuit Python Intro
 ## Table of Contents
 * [Servo Cap Touch](#ServoCapTouch)
 * [Neopixel Distance Sensor](#NeopixelDistanceSensor)
 * [Motor Control](#MotorControl)
 * [Photointerrupter](#Photointerrupter)
+* [Interrupt Time Interval](#InterrruptTimeInterval)
 ---
 
 ## Servo Cap Touch
@@ -239,7 +234,7 @@ I enjoyed this assignment, as it helped me solidify how to set up a digital pin 
 [```digitalio```](https://docs.circuitpython.org/en/latest/shared-bindings/digitalio/#digitalio.DigitalInOut)
 
 
-## Photointerrupter
+## Interrupt Time Interval
 
 ### Description & Code
 Use a photointerrupter to count time between interrupts. 
@@ -282,7 +277,7 @@ while True:
 ![Final photointerrupter fritzing diagram image1](https://github.com/cchao2869/Engr3/assets/91699474/b3c997a9-5f50-4c79-a158-d7bdc45d98c8)
 
 ### Reflection
-The hardest part of this assignment was understanding what time intervals to count and how to use ```time.monotonic()```. ```time.monotonic``` counts the time in seconds from when the board gets power. 
+The hardest part of this assignment was understanding what time intervals to count and how to use ```time.monotonic()```. ```time.monotonic``` counts the time in seconds from when the board gets power. In order to count the time interval between interrupts, I had to manipulate ```time.monotonic``` with the variables ```last``` and ```t```. ```last``` represents the time beginning at the first interrupt, and ```t``` is the current time (```time.monotonic```) subracted from the time at the first interrupt. The order to each line was important for this assignment. By writing the line defining ```t```, and printing that before ```last```, the time since the last interrupt is correctly printed. 
 
 # Onshape Certification
 ## Table of Contents
@@ -294,7 +289,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 
 ### Description
 
-Use a drawing to design a simple block hanger. 
+Use a drawing to design a simple block hanger in order to become comfortable using drawings to design parts for the Onshape Certification Exam in the spring. 
 
 ### Evidence
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/70692a77-fc97-471a-9d3a-a68c3d25ffa8) 
