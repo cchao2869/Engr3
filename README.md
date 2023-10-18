@@ -289,7 +289,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 
 ### Description
 
-Use a drawing to design a simple block hanger in order to become comfortable using drawings to design parts for the Onshape Certification Exam in the spring. 
+Use a drawing to design a simple block hanger. 
 
 ### Evidence
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/70692a77-fc97-471a-9d3a-a68c3d25ffa8) 
@@ -311,7 +311,7 @@ This assignment was a good transition to Onshape, but fairly easy as it only too
 
 ### Description
 
-Use drawings to design a swing arm with variables that can be adjusted. 
+Use drawings to design a swing arm with variables that can be adjusted to practice for the Onshape Certification Exam. 
 
 ### Evidence
 
