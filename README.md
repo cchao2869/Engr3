@@ -279,7 +279,7 @@ while True:
 ### Reflection
 The hardest part of this assignment was understanding what time intervals to count and how to use ```time.monotonic()```. ```time.monotonic``` counts the time in seconds from when the board gets power. In order to count the time interval between interrupts, I had to manipulate ```time.monotonic``` with the variables ```last``` and ```t```. ```last``` represents the time beginning at the first interrupt, and ```t``` is the current time (```time.monotonic```) subracted from the time at the first interrupt. The order to each line was important for this assignment. By writing the line defining ```t```, and printing that before ```last```, the time since the last interrupt is correctly printed. 
 
-# Onshape Certification
+# Onshape Certification Prep
 ## Table of Contents
 * [Block Hanger](#BlockHanger)
 * [Swing Arm](#SwingArm)
@@ -332,7 +332,27 @@ Front view configuration 1.
 
 This was good practice at using drawings to create a part on Onshape, as well as variables which are used in the Certification Exam I will take in the spring. Although there is not a "right" way to create a part, there are certainly ways to make a part that are less efficient, and lead to errors later on when dimensions need to be changed (such as with varibles). For instance, Mr. Dierof advised me to never use fillets as opposed to sketch fillets. I also thought it was interesting that Mr. Miller said he creates parts by beginning with a solid block and removing necessary pieces (mirroring the way a machine would manufacter the part). As a reminder, TYP means typical (referring to measurements). If a measurement has TYP next to it, it means similar entities have the same measurement. I ran into a few issues when reading the drawings. It is important to differentiate between the symbol for radius as opposed to diameter. For example, a circle of diameter 10 could be dimensioned as R5 or ⌀10. Additionally, the distance between the center of a circle and the edge is not the diameter, but half the length of the width (shown below). Finally, I learned how to read sectioned drawings. The dashed line shows exactly where the section is with the arrow pointing towards the direction of the face, and all shaded areas are solid. 
 
-![image](https://github.com/cchao2869/Engr3/assets/91699474/83d90853-3bf1-436c-8499-f2b4aad4c5a3)
-Dimensioning circle on edge. 
+## Single Part
 
+### Description
+
+Use drawings to design a single part with variables that can be adjusted for a series of questions.  
+
+### Evidence
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/19b87c9d-59ab-4dae-a309-df7c70de8c60)
+Front view configuration 1. 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/8abc8fe7-b50b-47ed-9dcb-5f6f1e025cdb)
+Side view configuration 2. 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/5a4c1a62-17f7-4bbd-a01f-3b1422ab14c0)
+Isometric view configuration 5. 
+
+
+### Part Link 
+
+[Single Part](https://cvilleschools.onshape.com/documents/c614b06d788cb2a3258e93e6/w/5742773ecaed99d6753b411e/e/924ea11a6697a511774fdc18?renderMode=0&uiState=654127416559cc4a6485e145)
+
+### Reflection
+
+This was a fairly easy part to design, as it is symmetrical, but it was still good practice of fundamentals for the Onshape Exam. For instance, although my first instinct was to use a Sketch Mirror to speed up the process of designing this part, Mr. Miller explained to me that a Part Mirror is better because it causes less issues later on (Sketch Mirrors can easily break). So, I sketched one half of the part, and then mirrored it after I extruded it. I also used a Feature Mirror to create the removed section (with an extrude) on both sides of the part. One issue I ran into is that I thought the two holes on top of the part could be created with the Hole Counterbore feature. However, because the depth of the inital removed section was dimentioned, these holes should be made with removed circles and a chamfer. After I finished the first configuration, I had an easy time with the next five because I made several variables and versions for each question. It is helpful to look ahead at all the questions, and create variables for dimensions that change (or at least those that change several times). Creating versions for each question was helpful if I needed to go back and forth between configurations. 
 
