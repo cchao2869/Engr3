@@ -283,6 +283,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 ## Table of Contents
 * [Block Hanger](#BlockHanger)
 * [Swing Arm](#SwingArm)
+* [Single Part](#SinglePart)
 ---
 
 ## Block Hanger
@@ -342,8 +343,10 @@ Use drawings to design a single part with variables that can be adjusted for a s
 
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/19b87c9d-59ab-4dae-a309-df7c70de8c60)
 Front view configuration 1. 
+
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/8abc8fe7-b50b-47ed-9dcb-5f6f1e025cdb)
-Side view configuration 2. 
+Side view configuration 2.
+
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/5a4c1a62-17f7-4bbd-a01f-3b1422ab14c0)
 Isometric view configuration 5. 
 
