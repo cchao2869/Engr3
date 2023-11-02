@@ -284,6 +284,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 * [Block Hanger](#BlockHanger)
 * [Swing Arm](#SwingArm)
 * [Single Part](#SinglePart)
+* [CAD Challenge - Wheel](#CADChallenge-Wheel)
 ---
 
 ## Block Hanger
@@ -358,4 +359,22 @@ Isometric view configuration 5.
 ### Reflection
 
 This was a fairly easy part to design, as it is symmetrical, but it was still good practice of fundamentals for the Onshape Exam. For instance, although my first instinct was to use a Sketch Mirror to speed up the process of designing this part, Mr. Miller explained to me that a Part Mirror is better because it causes less issues later on (Sketch Mirrors can easily break). So, I sketched one half of the part, and then mirrored it after I extruded it. I also used a Feature Mirror to create the removed section (with an extrude) on both sides of the part. One issue I ran into is that I thought the two holes on top of the part could be created with the Hole Counterbore feature. However, because the depth of the inital removed section was dimentioned, these holes should be made with removed circles and a chamfer. After I finished the first configuration, I had an easy time with the next five because I made several variables and versions for each question. It is helpful to look ahead at all the questions, and create variables for dimensions that change (or at least those that change several times). Creating versions for each question was helpful if I needed to go back and forth between configurations. 
+
+
+## CAD Challenge - Wheel
+
+### Description
+
+
+### Evidence
+
+
+
+### Part Link 
+
+[Wheel](https://cvilleschools.onshape.com/documents/0456890d7aa8f67fc5270900/w/00f0803b3dc99da3b8cd2f42/e/7fbbfec565f818dcf56dadc6?renderMode=0&uiState=6543c281a607f210024531c8)
+
+### Reflection
+
+This part was difficulkt, and I initially approached it the wrong way. I started by making a sketch of the top face, but I realized it was much easier to sketch the side section view, and revolve it. For drawings which include a section view in the middle of a circular symmetric part, it is often easier to revolve the section view (be aware - only extrude solid areas, those that are shaded). 
 
