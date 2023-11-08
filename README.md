@@ -285,6 +285,8 @@ The hardest part of this assignment was understanding what time intervals to cou
 * [Swing Arm](#SwingArm)
 * [Single Part](#SinglePart)
 * [CAD Challenge - Wheel](#CADChallenge-Wheel)
+* [Multi-Part Cylinder](#Multi-PartCylinder)
+* [Microphone Stand](#MicrophoneStand)
 ---
 
 ## Block Hanger
@@ -393,3 +395,71 @@ This part was difficult, and I initially approached it the wrong way. I started 
 
 ![image](https://github.com/cchao2869/Engr3/assets/91699474/c0e5e142-edd4-49c5-974b-c39672b23927)
 
+
+## Multi-Part Cylinder
+
+### Description
+Use drawings to create a multi-part cylinder with variables for different configurations. 
+
+### Evidence
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/b1417324-af12-46c7-ae60-0c73c8fb8222)
+
+Isometric view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/8b1f2f1a-2325-4ff3-b738-eb3da029b061)
+
+Side view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/e8326b0c-424c-4467-89c9-e9f0ec8f1546)
+
+Side section view. 
+
+### Part Link 
+[Multi-Part Cylinder](https://cvilleschools.onshape.com/documents/fc9491b76efd0795a2eb9a68/w/af227b52b9a197610ab03729/e/e79f10972489fbd2a8f1f00a?renderMode=0&uiState=654bb2b556ae3f1431d828a9)
+
+### Reflection
+
+This assignment was fun and used a variety of skills. As always, I began by looking over the configurations and creating variables for dimentions that will change in future questions. This helped greatly speed up the time to edit my multi-part after I made the first configuration. It is important to note that the part should not be created off all dimentions listed. Dimentions in parethesis as shown below are only for reference, as they will change in future configurations. It is helpful to go back and forth from the design intent and individual part drawings, because the design intent often has the actual dimentions the part should be based off of. With design intents, it can be helpful to use a extrude with a second end position. One feature that confus3ed me was the inner edge of the top cap. Although this initially appears like a chamfer or fillet, the way to create this inverse fillet is to sketch the radius as a section view, and revolve remove the arc (see below). Finally, be aware of where parts are solid or hollow with shaded regions. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/50f0d860-2416-45cf-b74d-6ee4c643ffc8)
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/3f2c3a02-35b9-462a-ba51-74a5555f41d8)
+
+Desgin intent and paranthetial dimentions. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/e2cd3fec-8d82-4616-b137-dc2f9f72d88c)
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/3bc19064-684d-4fa1-9244-c2d9f3787817)
+
+Reverse fillet revolve. 
+
+## Microphone Stand Assembly
+
+### Description
+Use drawings and variables to create a microphone stand and assmeble it using a screw. 
+### Evidence
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/d4ac55e0-7667-4fe3-86be-b17f73949968)
+
+Isometric view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/a72c9709-6d71-414a-945f-27619a2c33d1)
+
+Front view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/bb90c024-9a30-43c3-a73a-78a59cc5d214)
+
+Front section view. 
+
+### Part Link 
+
+[Microphone Stand Assembly](https://cvilleschools.onshape.com/documents/02d00aa08437ba3201fccadc/w/65c4c3db295472020c20516c/e/2d579a46d523769475dd7de6?renderMode=0&uiState=654bba3ef1cfc3529c883f48)
+
+### Reflection
+This assignment was fairly easy, but a good refresher in assemblies. With this part, I created variables for almost every dimention that changed with the different configurations, except the ones that only changed once in the final configuration. To make sure the part worked correctly when dimentions were changed, I based dimentions off the design intent as opposed to individual part so that the parts changed together. I also used revolves as much as possible when given circular section views. One feature that confused me was the inner filler on the Mic Holder. The outer edge is dimentioned to have a 10mm radius, with the outer and inner edge always 3mm apart. Making the inner fillet also a radius of 10 did not maintain the 3mm distance. Instead, the inner fillet was 7mm because of the circles and distance between them (see below). Be aware of material changes with different configurations as well. 
+
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/2c66c86d-757c-45c2-9da0-ebccee51e0a2)
+
+Mic Holder fillets. 
