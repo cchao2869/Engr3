@@ -364,11 +364,24 @@ This was a fairly easy part to design, as it is symmetrical, but it was still go
 ## CAD Challenge - Wheel
 
 ### Description
-
+Design a wheel based off drawings as quick as possible with the fewest number of features. 
 
 ### Evidence
+![image](https://github.com/cchao2869/Engr3/assets/91699474/6d47db93-85d3-47fe-9989-a3d861429872)
 
+Isometric view. 
 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/619328a7-ec3d-4bff-b825-24886ebb979d)
+
+Top view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/7321b6fd-31fd-4115-b477-acc86aa1cb1e)
+
+Front view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/b75d763d-e09d-4f6a-8e78-cda66c2c1ce3)
+
+Performance model. 
 
 ### Part Link 
 
@@ -376,5 +389,7 @@ This was a fairly easy part to design, as it is symmetrical, but it was still go
 
 ### Reflection
 
-This part was difficulkt, and I initially approached it the wrong way. I started by making a sketch of the top face, but I realized it was much easier to sketch the side section view, and revolve it. For drawings which include a section view in the middle of a circular symmetric part, it is often easier to revolve the section view (be aware - only extrude solid areas, those that are shaded). 
+This part was difficult, and I initially approached it the wrong way. I started by making a sketch of the top face, but I realized it was much easier to sketch the side section view, and revolve it. For drawings which include a section view in the middle of a circular symmetric part, it is often easier to revolve the section view (be aware - only extrude solid areas, those that are shaded). Another issue I had with this part was constraining the removed arc areas. Although it was not specifically dimentioned in the drawing, the edges of the removed areas pass through the origin as shown below. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/c0e5e142-edd4-49c5-974b-c39672b23927)
 
