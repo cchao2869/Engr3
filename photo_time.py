@@ -14,7 +14,6 @@ state = 0    # last interrupt state
 counter = 0     # number of interrupts
 last = 0
 t = 0
-mark = 0
 
 
 while True:
