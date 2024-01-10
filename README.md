@@ -549,7 +549,7 @@ while True:
 ![ezgif-4-8dd76563de](https://github.com/cchao2869/Engr3/assets/91699474/730ac988-450a-4c73-8370-6c2e1e63c54e)
 
 ### Wiring
-
+![image](https://github.com/cchao2869/Engr3/assets/91699474/f251728c-51d7-47d8-97dc-7d5e0868b7f8)
 
 ### Reflection
 Although the coding for this assignment was simple, I ran into several problems using VS Code and uploading the LCD libraries. Some of these include powering the LCD and board at the same time (must unplug LCD power first) and inability to access the library folder (delete and redownload). As for the code, it was simple when broken up into different steps. First, I got the rotary encoder working as a button. With a quick few lines to debounce the button (using both button_state and button.value), this was accomplished. Next, I worked on cycling through the menu with a three option array. I used modulo % 3 to make sure every encoder position returns menu[0], menu[1], or menu[2]. Finally, I set up the LCD to display the menu, and used simple ```if``` statements to control the neopixel. This assignment taught me the value in dividing a difficult problem into managable steps, in order to complete the task with ease and precision, as it is easier to identify where a problem lies if one arises. 
