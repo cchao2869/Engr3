@@ -29,35 +29,29 @@ async def catch_pin_transitions(pin):      # Print a message when pin goes low a
         while True:
             event = keys.events.get()
             if event:
-                if event.pressed:
+                if event.pressed:           # if limit switch pressed
                     print("Limit Switch was pressed.")
-                elif event.released:
+                    for step in range(STEPS):       # 
+                        motor.onestep(style=stepper.DOUBLE)     # move motor clockwise
+                        time.sleep(DELAY)
+                elif event.released:         # if limit switch released
                     print("Limit Switch was released.")
             await asyncio.sleep(0)       # run motor to move to check switch again
 
 async def run_motor():
     while (True):
-        for step in range(STEPS):       # 
-            motor.onestep(style=stepper.DOUBLE)     # move motor clockwise
-            time.sleep(DELAY)
-
         for step in range(STEPS):
             motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)     # move motor counterclockwise and put  motor in  setting for  highest torque for pressing down the limit switch
             time.sleep(DELAY)
-
         await asyncio.sleep(0)       # run limit switch values to move motor again
 
 
 async def main():
     while (True):
-        interrupt_task = asyncio.create_task(catch_pin_transitions(board.D2))
-        motor_task = asyncio.create_task(run_motor(board.D9, board.D10, board.D11, board.D12))          # create motor task that calls run_motor to monitor motor value changes
+        interrupt_task = asyncio.create_task(catch_pin_transitions(board.D2))           # run both functions at same time, run motor and check limit switch (call catch_pin_Transitions)
+        motor_task = asyncio.create_task(run_motor())          # run both functions at same time, call run_motor to monitor motor value changes
         await asyncio.gather(interrupt_task, motor_task)
-
 asyncio.run(main())
-
-
-        
 
 
 
