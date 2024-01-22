@@ -621,7 +621,7 @@ asyncio.run(main())
 ### Evidence
 
 ### Wiring
-
+https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20DRV8833%20DC-Stepper%20Motor%20Driver.fzpz 
 ### Reflection
 
 
