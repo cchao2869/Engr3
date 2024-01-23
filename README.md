@@ -621,9 +621,12 @@ asyncio.run(main())
 ### Evidence
 
 ### Wiring
-https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20DRV8833%20DC-Stepper%20Motor%20Driver.fzpz 
+![image](https://github.com/cchao2869/Engr3/assets/91699474/93a05195-54be-4dc5-9f96-48c7513cdaae)
+
 ### Reflection
+The Stepper Motor and Limit Switch assignment was super cool because it uses the limit switch to stimulate interrupts with polling. Polling allows the user to constantly check for a change (such as switch value changing). This makes it possible to have two tasks runnig at the same time, which was previously thought of as one of the limits to coding in python. Using the ```keypad``` library, I tracked changes in the limit switch values, while simultaineoulsy running the motor using ```asyncio```. The biggest challenge of this assignment was the order of the functions, because there are multiple ```while True``` statements. After the setup, I created three functions using the ```asyncio``` library to efficiently run the motor based on the limit switch. The functions ```catch_pin_transitions()``` and ```run_motor()``` move the motor based on the limit switch values. Finally, the ```main()``` function creates the interrupt, and allows both functions to run at the same time. It is also important to note that although there are three ```while True``` statements, only the first can be written without parenthesis. 
 
-
+I also upgraded my process for wiring diagrams, using Fritzing with imported custom parts from the Adafruit library shown below: 
+[Adafuit Fritzing Library](https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20DRV8833%20DC-Stepper%20Motor%20Driver.fzpz)
 
 
