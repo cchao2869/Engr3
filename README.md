@@ -631,3 +631,6 @@ I also upgraded my process for wiring diagrams, using Fritzing with imported cus
 [Adafuit Fritzing Library](https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20DRV8833%20DC-Stepper%20Motor%20Driver.fzpz)
 
 
+## IR Sensor 
+
+[Modulo](https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/#:~:text=The%20%25%20symbol%20in%20Python%20is,%2C%20*%20%2C%20**%20%2C%20%2F%2F%20.)
