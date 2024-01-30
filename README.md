@@ -632,5 +632,58 @@ I also upgraded my process for wiring diagrams, using Fritzing with imported cus
 
 
 ## IR Sensor 
+### Description & Code
+Use an IR sensor to detect when an object is close or far with output from the neopixel. 
 
+Spicy: Count how many times the IR sensor detects an object. Differentiate odd and even counts with the color of the neopixel. 
+
+```python
+# Carolina Chao
+# IR Sensor - 1/29/2024
+
+import board
+import neopixel
+import digitalio
+
+# Basic setup for any sensor:
+
+ir_sensor = digitalio.DigitalInOut(board.D2)        # Set up the IR Sensor using digital pin 2.
+ir_sensor.direction = digitalio.Direction.INPUT         # Set the photointerrupter as an input.
+ir_sensor.pull = digitalio.Pull.UP           # Use the internal pull-up resistor.
+
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+led.brightness = 0.3
+
+c = 0 
+last = False
+
+while True:
+    if ir_sensor.value == False:        # If object close to sensor (sensor value = LOW)
+        print("Obj close.      ", c)
+        if last == False:       # Debounce: If state = obj not currently detected
+            c = c + 1           # Add to counter
+            last = True         # Set state = obj currently detected
+
+    if ir_sensor.value == True:         # If nothing near sensor (sensor value = HIGH) 
+        print("No obj detected.", c)
+        if last == True:        # Debounce: If state = obj currently detected
+            last = False        # Reset state = obj not currently detected
+
+    if(c % 2 != 0):         # If counter is odd number 
+        led[0] = (0, 0, 255)        # Neopixel blue
+    
+    if(c % 2 != 1):             # If counter is even number
+        led[0] = (0, 255, 0)       # Neopixel green
+```
+
+### Evidence
+![ezgif-7-093e52d026](https://github.com/cchao2869/Engr3/assets/91699474/3c65aa1b-bfa6-429b-9261-3314f8d10b6c)
+
+### Wiring
+![image](https://github.com/cchao2869/Engr3/assets/91699474/3821864c-7e93-4baa-b990-c44c21c123bf)
+
+### Reflection
+This assignment was quite easy and quick to complete. It was a good reminder on how to set up a sensor and debounce a counter. The IR sensor is a pretty simple sensor. An IR LED emits an infared light towards an object, which will bounce the light back. The IR reciever will then determine whether or not the object is nearby. Note that the IR sensor has an inverted output, so LOW means an object is close and HIGH means an object is far. For my spicy version, I created a counter, ```c```, for the number of times an object has been detected. Additionally, I used the modulo % operator (information below) to differentiate odd and even numbers based on remainders. 
+
+### Resources
 [Modulo](https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/#:~:text=The%20%25%20symbol%20in%20Python%20is,%2C%20*%20%2C%20**%20%2C%20%2F%2F%20.)
