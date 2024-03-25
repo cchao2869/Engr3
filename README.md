@@ -697,6 +697,10 @@ This assignment was quite easy and quick to complete. It was a good reminder on 
 Create a robot claw that can grasp objects using one actuator. 
 
 ### Sketches
+![309318733-5cc6f164-006c-476e-8b7a-b315c3204697](https://github.com/cchao2869/Engr3/assets/91699474/5540f843-a8f9-4e12-b50d-ca5769eb6278)
+![309318384-61344db8-e900-4f53-9e34-002c4e5a8a66](https://github.com/cchao2869/Engr3/assets/91699474/ad2b5d4b-5402-4706-bc82-2198e05fee6b)
+![309318399-4f053107-9a00-4792-bd1f-df41e984cee6](https://github.com/cchao2869/Engr3/assets/91699474/ce8ec4d2-bf9d-4124-aab9-1024d7ba0d53)
+![309317860-a0cf66ff-9972-4464-9a6a-dc748dea4574](https://github.com/cchao2869/Engr3/assets/91699474/5aa32562-0fe4-491e-8ceb-76a8bf27bedd)
 
 ### Evidence
 ![ezgif-5-44ab43cdc4](https://github.com/cchao2869/Engr3/assets/91699474/417dc9e6-7ba7-4324-8193-d86acb6d7cdb)
