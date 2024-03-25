@@ -3,6 +3,7 @@
 * [Circuit Python Intro](#CircuitPythonIntro)
 * [Onshape Certification Prep](#OnshapeCertificationPrep)
 * [Circuit Python Intermediate](#CircuitPythonIntermediate)
+* [Robot Arm Prep](#RobotArmPrep)
 ---
 ---
 ---
@@ -477,7 +478,7 @@ Mic Holder fillets.
 ---
 ---
 
-# Circuit Python Prep
+# Circuit Python Intermediate
 
 ## Table of Contents
 * [Rotary Encoder Traffic Light](#RotaryEncoderTrafficLight)
@@ -687,3 +688,31 @@ This assignment was quite easy and quick to complete. It was a good reminder on 
 
 ### Resources
 [Modulo](https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/#:~:text=The%20%25%20symbol%20in%20Python%20is,%2C%20*%20%2C%20**%20%2C%20%2F%2F%20.)
+
+
+# Robot Arm Prep
+
+## Rotational Claw Design
+### Description
+Create a robot claw that can grasp objects using one actuator. 
+
+### Sketches
+
+### Evidence
+![ezgif-5-44ab43cdc4](https://github.com/cchao2869/Engr3/assets/91699474/417dc9e6-7ba7-4324-8193-d86acb6d7cdb)
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/a0c764cf-0186-48a6-b00c-ae6dd84d5b68)
+Gear alignment section view. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/131e1660-e1d6-4b24-82b9-a46693d7e83d)
+Isometric view. 
+
+### Part Link 
+[Rotational Claw Design](https://cvilleschools.onshape.com/documents/4f77513aeb9ad5253a1c5f0d/w/a9b3b7d540f58ab648cb4b01/e/98a47b01735030d86a7244d6?renderMode=0&uiState=6601952bd9ae1a6b00fd9191) 
+
+
+### Reflection
+
+I began by researching robot claws and found a thesis by Romanishin at MIT. I was inspired by his design and its ability to use elastics to grasp objects. However, his claw was soley focused on the application of funiture assembly. By examining his work, I found that I could use parts of his design and my own innovation to expand the applications of the claw. I designed a similar claw, but with the focus of simply grasping different shaped objects. The biggest struggle I overcame was the alignment of the gears. My design underwent several iterations, and every change caused for the gears to offset slightly. This was very tiresome to adjust constantly. If I were to start over, I would plan my design more thoroughly before jumping in to Onshape. This would allow me to have a more finalized idea of the design, and I would not have to make as many adjustments later on. 
+
+[Romanishin Thesis](https://web.mit.edu/johnrom/www/design/publications/Romanishin_2012_Thesis.pdf)
