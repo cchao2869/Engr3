@@ -298,6 +298,7 @@ The hardest part of this assignment was understanding what time intervals to cou
 * [CAD Challenge - Wheel](#CADChallenge-Wheel)
 * [Multi-Part Cylinder](#Multi-PartCylinder)
 * [Microphone Stand](#MicrophoneStand)
+* [Vice Grips Assembly](#ViceGripsAssembly)
 ---
 
 ## Block Hanger
@@ -475,6 +476,24 @@ This assignment was fairly easy, but a good refresher in assemblies. With this p
 
 Mic Holder fillets. 
 
+## Vice Grips Assembly
+
+### Description
+Use directions to assemble pre-designed vice grips with a variety of mates.
+
+### Evidence
+![image](https://github.com/cchao2869/Engr3/assets/91699474/4f81478f-1352-4b46-9665-a5e28028924c)
+Side view in open position. 
+
+![image](https://github.com/cchao2869/Engr3/assets/91699474/62efd44d-396a-484f-9327-bae80e65bab1)
+Side view closed position.
+
+### Part Link
+[Vice Grips Assembly](https://cvilleschools.onshape.com/documents/2cdc50932d748a7bfa68af2a/w/7cbf8acc10ff366e5e745b9b/e/c8c4bcfe0230d6d62bff90f2?renderMode=0&uiState=6602e5b31442552526207dee)
+
+### Reflection
+Although I have not had a ton of practice on assembling in Onshape, it was fairly intuitive. First, I fixed the Top Handle on the origion. Note: only one part should be fixed in an assembly. Next, I mated groups of parts together (ie. the Upper Jaw and Top Handle). I found it easiest to orient parts in the correct way before they are mated together. This prevents mismatched parts. 
+
 ---
 ---
 
@@ -483,6 +502,7 @@ Mic Holder fillets.
 ## Table of Contents
 * [Rotary Encoder Traffic Light](#RotaryEncoderTrafficLight)
 * [Stepper Motor and Limit Switch](#StepperMotorandLimitSwitch)
+* [IR Sensor](#IRSensor)
 ---
 
 ## Rotary Encoder Traffic Light
